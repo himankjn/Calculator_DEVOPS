@@ -17,9 +17,9 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         double number1, number2;
         do {
-            System.out.println("Calculator-DevOps, Choose to perform operation");
-            System.out.print("Press 1 to find factorial\nPress 2 to find Square root\nPress 3 to find power\nPress 4 to find natural logarithm\n" +
-                    "Press 5 to exit\nEnter your choice: ");
+            System.out.println("Scientific Calculator using DevOps. \n Choose operation:");
+            System.out.print("1. Factorial\n2. Square root\n3. Power\n4. Natural Logarithm\n" +
+                    "5. Exit\nEnter your choice: ");
             int choice;
             try {
                 choice = scanner.nextInt();
@@ -29,7 +29,7 @@ public class Calculator {
 
             switch (choice) {
                 case 1:
-                    // do factorial
+                    // Factorial
                     System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
                     System.out.println("Factorial of "+number1+" is : " + calculator.factoral(number1));
@@ -37,7 +37,7 @@ public class Calculator {
 
                     break;
                 case 2:
-                    // find square root
+                    // Square root
                     System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
                     System.out.println("Square root of "+number1+" is : " + calculator.sqroot(number1));
@@ -46,7 +46,7 @@ public class Calculator {
 
                     break;
                 case 3:
-                    // find power
+                    // Power
                     System.out.print("Enter the first number : ");
                     number1 = scanner.nextDouble();
                     System.out.print("Enter the second number : ");
@@ -55,7 +55,7 @@ public class Calculator {
                     System.out.println("\n");
                     break;
                 case 4:
-                    // find natural log
+                    // Natural log
                     System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
                     System.out.println("Natural log of "+number1+" is : " + calculator.naturalLog(number1));

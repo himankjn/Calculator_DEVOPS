@@ -8,6 +8,15 @@
         src: ./target/calculatorDevOps-1.0-SNAPSHOT-jar-with-dependencies.jar
         dest: ~/
         
+    - name: set the stable repository
+      apt_repository: 
+        repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable
+      
+
+    - name: Update all packages to the latest version
+      apt:
+        upgrade: dist
+        
     - name: Install docker.
       package:
         name: docker-ce

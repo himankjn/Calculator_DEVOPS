@@ -1,0 +1,9 @@
+---
+- name: Deploy a jar file
+  hosts: ubuntu18
+  remote_user: himank
+  tasks:
+    - name: Copy jar file to home directory
+      copy:
+        src: ./target/calculatorDevOps-1.0-SNAPSHOT-jar-with-dependencies.jar
+        dest: ~/

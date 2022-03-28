@@ -1,0 +1,6 @@
+---
+- name: Test connectivity to target servers
+  hosts: ubuntu18
+  tasks:
+    - name: Ping test
+      ping:

@@ -10,10 +10,11 @@
       docker_container:
         name: container1
         image: himankjn/check
-   
-    - name: Run a simple command (command)
-      community.docker.docker_container_exec:
-        container: foo
-        command: /bin/bash -c "ls -lah"
-        chdir: /root
-      register: result
+    - name: deploy docker container
+      docker_container:
+        image: himankjn/check
+        name: container2
+        state: started
+        auto_remove: true
+        ports:
+          - "8080:80"

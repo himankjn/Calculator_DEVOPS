@@ -10,3 +10,10 @@
       docker_container:
         name: container1
         image: himankjn/check
+   
+    - name: Run a simple command (command)
+          community.docker.docker_container_exec:
+              container: container1
+              command: /bin/bash -c "java -jar calculatorDevOps-1.0-SNAPSHOT-jar-with-dependencies.jar"
+              chdir: ./
+              register: result

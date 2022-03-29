@@ -6,3 +6,7 @@
       docker_image:
         name: himankjn/check
         source: pull
+    - name: Create a data container
+      docker_container:
+        name: mydata
+        image: busybox

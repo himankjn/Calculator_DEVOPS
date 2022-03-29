@@ -1,9 +1,8 @@
 ---
-- name: Deploy a jar file
-  hosts: ubuntu18
-  remote_user: himank
+- name: Pull docker image of Calculator
+  hosts: all
   tasks:
-    - name: pull an image
+    - name: Pull image
       docker_image:
         name: himankjn/check
-  
+        source: pull

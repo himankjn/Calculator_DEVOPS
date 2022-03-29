@@ -8,5 +8,5 @@
         source: pull
     - name: Create a data container
       docker_container:
-        name: mydata
-        image: busybox
+        name: container1
+        image: himankjn/check

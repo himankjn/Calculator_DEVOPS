@@ -15,6 +15,5 @@
         image: himankjn/check
         name: container2
         state: started
-        auto_remove: true
         ports:
           - "8080:80"

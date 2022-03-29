@@ -6,10 +6,6 @@
       docker_image:
         name: himankjn/check
         source: pull
-    - name: Create a data container
-      docker_container:
-        name: container1
-        image: himankjn/check
     - name: deploy docker container
       docker_container:
         image: himankjn/check

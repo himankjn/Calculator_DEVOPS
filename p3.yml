@@ -13,7 +13,7 @@
    
     - name: Run a simple command (command)
       community.docker.docker_container_exec:
-          container: container1
-          command: /bin/bash -c "java -jar calculatorDevOps-1.0-SNAPSHOT-jar-with-dependencies.jar"
-          chdir: ./
-          register: result
+        container: foo
+        command: /bin/bash -c "ls -lah"
+        chdir: /root
+      register: result

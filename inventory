@@ -1,2 +1,2 @@
 [ubuntu18]
-172.16.234.234 ansible_user=himank
+172.16.134.134 ansible_user=himank

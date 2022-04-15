@@ -1,4 +1,4 @@
-# Calculator_Proj
+# MiniProject SPE
 Calculator App developed using maven &amp; jenkins and deployed using ansible
 
 Configuration:

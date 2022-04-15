@@ -2,14 +2,14 @@
 - name: Pull docker image of Calculator
   hosts: all
   tasks:
-    - name: Pull image
-      docker_image:
-        name: himankjn/check
-        source: pull
-    - name: deploy docker container
-      docker_container:
-        image: himankjn/check
-        name: container2
+
+    - name: Start docker service
+      service:
+        name: docker
         state: started
-        ports:
-          - "8080:80"
+        
+    - name: pull docker image
+      shell: docker pull himankjn/check
+      
+    - name: running container
+      shell: docker run -it -d himankjn/check

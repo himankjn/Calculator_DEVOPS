@@ -15,7 +15,7 @@ public class Calculator {
 
         Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
-        double number1, number2;
+        double n1, n2;
         do {
             System.out.println("Scientific Calculator using DevOps. \n Choose operation:");
             System.out.print("1. Factorial\n2. Square root\n3. Power\n4. Natural Logarithm\n" +
@@ -31,16 +31,16 @@ public class Calculator {
                 case 1:
                     // Factorial
                     System.out.print("Enter a number : ");
-                    number1 = scanner.nextDouble();
-                    System.out.println("Factorial of "+number1+" is : " + calculator.factoral(number1));
+                    n1 = scanner.nextDouble();
+                    System.out.println("Factorial of "+n1+" is : " + calculator.factoral(n1));
                     System.out.println("\n");
 
                     break;
                 case 2:
                     // Square root
                     System.out.print("Enter a number : ");
-                    number1 = scanner.nextDouble();
-                    System.out.println("Square root of "+number1+" is : " + calculator.sqroot(number1));
+                    n1 = scanner.nextDouble();
+                    System.out.println("Square root of "+n1+" is : " + calculator.sqroot(n1));
                     System.out.println("\n");
 
 
@@ -48,17 +48,17 @@ public class Calculator {
                 case 3:
                     // Power
                     System.out.print("Enter the first number : ");
-                    number1 = scanner.nextDouble();
+                    n1 = scanner.nextDouble();
                     System.out.print("Enter the second number : ");
-                    number2 = scanner.nextDouble();
-                    System.out.println(number1+ " raised to power "+number2+" is : " + calculator.power(number1, number2));
+                    n2 = scanner.nextDouble();
+                    System.out.println(n1+ " raised to power "+n2+" is : " + calculator.power(n1, n2));
                     System.out.println("\n");
                     break;
                 case 4:
                     // Natural log
                     System.out.print("Enter a number : ");
-                    number1 = scanner.nextDouble();
-                    System.out.println("Natural log of "+number1+" is : " + calculator.naturalLog(number1));
+                    n1 = scanner.nextDouble();
+                    System.out.println("Natural log of "+n1+" is : " + calculator.naturalLog(n1));
                     System.out.println("\n");
 
                     break;
@@ -70,41 +70,41 @@ public class Calculator {
     }
 
 
-    public double factoral(double number1) {
-        logger.info("[FACTORIAL] - " + number1);
-        double result = fact(number1);
+    public double factoral(double n1) {
+        logger.info("[FACTORIAL] - " + n1);
+        double result = fact(n1);
         logger.info("[RESULT - FACTORIAL] - " + result);
         return result;
     }
 
 
 
-    public double sqroot(double number1) {
-        logger.info("[SQ ROOT] - " + number1);
-        double result = Math.sqrt(number1);
+    public double sqroot(double n1) {
+        logger.info("[SQ ROOT] - " + n1);
+        double result = Math.sqrt(n1);
         logger.info("[RESULT - SQ ROOT] - " + result);
         return result;
     }
 
 
-    public double power(double number1, double number2) {
-        logger.info("[POWER - " + number1 + " RAISED TO] " + number2);
-        double result = Math.pow(number1,number2);
+    public double power(double n1, double n2) {
+        logger.info("[POWER - " + n1 + " RAISED TO] " + n2);
+        double result = Math.pow(n1,n2);
         logger.info("[RESULT - POWER] - " + result);
         return result;
     }
 
-    public double naturalLog(double number1) {
-        logger.info("[NATURAL LOG] - " + number1);
+    public double naturalLog(double n1) {
+        logger.info("[NATURAL LOG] - " + n1);
         double result = 0;
         try {
 
-            if (number1 <0 ) {
+            if (n1 <0 ) {
                 result = Double.NaN;
                 throw new ArithmeticException("Case of NaN 0.0/0.0");
             }
             else {
-                result = Math.log(number1);
+                result = Math.log(n1);
             }
         } catch (ArithmeticException error) {
             System.out.println("[EXCEPTION - LOG] - Cannot find log of negative numbers " + error.getLocalizedMessage());

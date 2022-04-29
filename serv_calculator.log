@@ -1,0 +1,8 @@
+2022-04-29 06:35:35.909 [main] INFO  calculator.Calculator - [FACTORIAL] - 3.0
+2022-04-29 06:35:35.912 [main] INFO  calculator.Calculator - [RESULT - FACTORIAL] - 6.0
+2022-04-29 06:35:37.782 [main] INFO  calculator.Calculator - [SQ ROOT] - 4.0
+2022-04-29 06:35:37.783 [main] INFO  calculator.Calculator - [RESULT - SQ ROOT] - 2.0
+2022-04-29 06:35:41.040 [main] INFO  calculator.Calculator - [POWER - 2.0 RAISED TO] 3.0
+2022-04-29 06:35:41.040 [main] INFO  calculator.Calculator - [RESULT - POWER] - 8.0
+2022-04-29 06:35:43.427 [main] INFO  calculator.Calculator - [NATURAL LOG] - 4.0
+2022-04-29 06:35:43.427 [main] INFO  calculator.Calculator - [RESULT - NATURAL LOG] - 1.3862943611198906

@@ -8,4 +8,3 @@ Ensure the following:
 * The username of remote server and ansible_user in inventory file are same
 * The credentials and pipeline links are upto date.
 
-Thank You
